@@ -1,27 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Pokedex Map</title>
-<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Mapa Kanto</title>
+    <style>
+        /* Importamos una fuente estilo pixel para el toque retro */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        /* Contenedor principal con el mapa de fondo */
+        .main-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('kanto-map.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Título superior centralizado */
+        .pokedex-header {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px 40px;
+            border: 4px solid #333;
+            border-radius: 15px;
+            font-size: 24px;
+            z-index: 10;
+        }
+
+        /* Contenedor de la Pokédex (dispositivo rojo) */
+        .pokedex-wrapper {
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            width: 350px; /* Ajusta el tamaño según prefieras */
+            z-index: 5;
+        }
+
+        .pokedex-image {
+            width: 100%;
+            filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+        }
+
+        /* Lista de enlaces Pokémon */
+        .pokemon-menu {
+            position: absolute;
+            top: 480px; /* Posicionado debajo de la Pokédex */
+            left: 40px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 10;
+        }
+
+        .pokemon-menu li {
+            margin-bottom: 12px;
+        }
+
+        .pokemon-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px #000;
+            transition: color 0.3s ease;
+        }
+
+        /* Efecto al pasar el ratón por los enlaces */
+        .pokemon-menu a:hover {
+            color: #ffcb05; /* Color amarillo Pokémon */
+            text-shadow: 2px 2px 8px #ff0000;
+        }
+
+        .pokemon-menu a::before {
+            content: "• ";
+        }
+
+    </style>
+</head>
 <body>
 
-<div class="container">
+    <div class="main-container">
+        <div class="pokedex-header">Pokedex</div>
 
-    <!-- Pokedex -->
-    <img src="pokedex.png" class="pokedex">
+        <div class="pokedex-wrapper">
+            <img src="pokedex.png" alt="Pokédex Device" class="pokedex-image">
+        </div>
 
-    <!-- Lista de Pokemon -->
-    <ul class="pokemon-list">
-        <li><a href="cindaquil.html">cindaquil</a></li>
-        <li><a href="gengar.html">gengar</a></li>
-        <li><a href="mew.html">mew</a></li>
-        <li><a href="rayquaza.html">rayquaza</a></li>
-    </ul>
-
-</div>
+        <ul class="pokemon-menu">
+            <li><a href="cyndaquil.html">cyndaquil</a></li>
+            <li><a href="gengar.html">gengar</a></li>
+            <li><a href="mew.html">mew</a></li>
+            <li><a href="rayquaza.html">rayquaza</a></li>
+        </ul>
+    </div>
 
 </body>
 </html>
