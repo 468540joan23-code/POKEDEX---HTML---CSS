@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Cyndaquil</title>
+<title>Gengar</title>
 
-<!-- Fuente retro opcional -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <style>
@@ -19,20 +18,17 @@ body {
     background-color: #e6d5bd;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .main {
     min-height: 100vh;
     padding: 5vh 5vw;
 }
 
-/* TITULO */
 h1 {
     text-align: center;
     font-size: clamp(20px, 4vw, 40px);
     margin-bottom: 5vh;
 }
 
-/* CONTENIDO PRINCIPAL */
 .content {
     display: flex;
     align-items: center;
@@ -42,7 +38,7 @@ h1 {
 }
 
 .pokemon-img {
-    width: clamp(120px, 20vw, 250px);
+    width: clamp(150px, 25vw, 300px);
 }
 
 .info {
@@ -50,18 +46,18 @@ h1 {
     font-size: clamp(10px, 1.2vw, 16px);
 }
 
-/* TIPO */
 .tipo {
     margin-bottom: 20px;
 }
 
 .badge {
-    background-color: orange;
+    background-color: purple;
     padding: 5px 10px;
     border-radius: 6px;
+    margin-right: 5px;
+    color: white;
 }
 
-/* BOTON */
 .boton {
     display: block;
     margin: 5vh auto;
@@ -74,9 +70,7 @@ h1 {
     width: fit-content;
 }
 
-/* ------------------- */
 /* EVOLUCIONES */
-/* ------------------- */
 
 .evoluciones {
     background: repeating-linear-gradient(
@@ -88,11 +82,6 @@ h1 {
     );
     padding: 40px 20px;
     color: white;
-}
-
-.evoluciones h2 {
-    margin-bottom: 30px;
-    font-size: 18px;
 }
 
 .evo-container {
@@ -114,7 +103,7 @@ h1 {
 }
 
 .evo img {
-    width: clamp(100px, 15vw, 180px);
+    width: clamp(100px, 15vw, 160px);
     border-radius: 50%;
     border: 5px solid white;
     background: #555;
@@ -132,15 +121,12 @@ h1 {
 
 .evo-type {
     margin-top: 10px;
-    background: orange;
+    background: purple;
     padding: 5px 10px;
     border-radius: 10px;
     display: inline-block;
     font-size: 12px;
-}
-
-.ghost {
-    background: purple;
+    color: white;
 }
 </style>
 </head>
@@ -149,21 +135,23 @@ h1 {
 
 <div class="main">
 
-    <h1>Cyndaquil</h1>
+    <h1>Gengar</h1>
 
     <div class="content">
-        <img src="cyndaquil.png" class="pokemon-img">
+        <img src="gengar.png" class="pokemon-img">
 
         <div class="info">
             <div class="tipo">
-                Tipo: <span class="badge">fuego</span>
+                Tipo: 
+                <span class="badge">Fantasma</span>
+                <span class="badge">Veneno</span>
             </div>
 
             <p>
                 <strong>Descripción:</strong><br><br>
-                Cyndaquil se protege soltando llamas por el lomo. Cuando está enfadado,
-                las llamas son fieras, pero, si está cansado, solo consigue echar algunas
-                chispas que no llegan a cuajar en una completa combustión.
+                Gengar se esconde en las sombras y absorbe el calor de su entorno.
+                Si sientes un escalofrío repentino, puede que esté cerca observándote
+                con una sonrisa traviesa.
             </p>
         </div>
     </div>
@@ -179,39 +167,29 @@ h1 {
 
     <div class="evo-container">
 
-        <!-- CYNDAQUIL -->
-        <a href="cyndaquil.html" class="evo">
-            <img src="cyndaquil.png">
-            <div class="evo-name">Cyndaquil N.º 0155</div>
-            <div class="evo-type">Fuego</div>
+        <!-- GASTLY -->
+        <a href="gastly.html" class="evo">
+            <img src="gastly.png">
+            <div class="evo-name">Gastly N.º 0092</div>
+            <div class="evo-type">Fantasma</div>
         </a>
 
         <div class="arrow">›</div>
 
-        <!-- QUILAVA -->
-        <a href="quilava.html" class="evo">
-            <img src="quilava.png">
-            <div class="evo-name">Quilava N.º 0156</div>
-            <div class="evo-type">Fuego</div>
+        <!-- HAUNTER -->
+        <a href="haunter.html" class="evo">
+            <img src="haunter.png">
+            <div class="evo-name">Haunter N.º 0093</div>
+            <div class="evo-type">Fantasma</div>
         </a>
 
         <div class="arrow">›</div>
 
-        <!-- TYPHLOSION -->
-        <a href="typhlosion.html" class="evo">
-            <img src="typhlosion.png">
-            <div class="evo-name">Typhlosion N.º 0157</div>
-            <div class="evo-type">Fuego</div>
-        </a>
-
-        <!-- TYPHLOSION HISUI -->
-        <a href="typhlosion-hisui.html" class="evo">
-            <img src="typhlosion-hisui.png">
-            <div class="evo-name">Typhlosion N.º 0157</div>
-            <div>
-                <span class="evo-type">Fuego</span>
-                <span class="evo-type ghost">Fantasma</span>
-            </div>
+        <!-- GENGAR -->
+        <a href="gengar.html" class="evo">
+            <img src="gengar.png">
+            <div class="evo-name">Gengar N.º 0094</div>
+            <div class="evo-type">Fantasma</div>
         </a>
 
     </div>
