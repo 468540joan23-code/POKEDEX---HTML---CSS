@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Cyndaquil</title>
+<style>
+    body {
+        margin: 0;
+        font-family: "Courier New", monospace;
+        background-color: #e9d8c2; /* fondo beige */
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .pokemon-img {
+        width: 200px;
+    }
+
+    .info {
+        max-width: 800px;
+    }
+
+    .tipo {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .badge {
+        background-color: orange;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .descripcion {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .boton {
+        display: block;
+        margin: 40px auto 0;
+        background-color: red;
+        color: white;
+        padding: 12px 25px;
+        text-align: center;
+        font-size: 18px;
+        border-radius: 6px;
+        text-decoration: none;
+        width: fit-content;
+    }
+
+    .boton:hover {
+        background-color: darkred;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cyndaquil</h1>
+
+    <div class="content">
+        <img src="cyndaquil.png" alt="Cyndaquil" class="pokemon-img">
+
+        <div class="info">
+            <div class="tipo">
+                <strong>Tipo:</strong> <span class="badge">fuego</span>
+            </div>
+
+            <div class="descripcion">
+                <strong>Descripción:</strong><br><br>
+                Cyndaquil se protege soltando llamas por el lomo. Cuando está enfadado,
+                las llamas son fieras, pero, si está cansado, solo consigue echar algunas
+                chispas que no llegan a cuajar en una completa combustión.
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="boton">Volver a inicio</a>
+</div>
+
+</body>
+</html>
