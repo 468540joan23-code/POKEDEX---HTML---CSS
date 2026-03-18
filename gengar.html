@@ -5,8 +5,18 @@
 <title>Gengar</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 <style>
+
+/* Pokémon seleccionado */
+.evo.active img {
+    border: 5px solid yellow;
+    box-shadow: 0 0 20px yellow;
+    transform: scale(1.1);
+}
+
+.evo.active .evo-name {
+    color: yellow;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -168,7 +178,7 @@ h1 {
     <div class="evo-container">
 
         <!-- GASTLY -->
-        <a href="gastly.html" class="evo">
+        <a href="gastly.html" class="evo>
             <img src="gastly.png">
             <div class="evo-name">Gastly N.º 0092</div>
             <div class="evo-type">Fantasma</div>
@@ -186,7 +196,7 @@ h1 {
         <div class="arrow">›</div>
 
         <!-- GENGAR -->
-        <a href="gengar.html" class="evo">
+        <a href="gengar.html" class="evo active">
             <img src="gengar.png">
             <div class="evo-name">Gengar N.º 0094</div>
             <div class="evo-type">Fantasma</div>
