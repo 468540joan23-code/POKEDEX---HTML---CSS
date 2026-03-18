@@ -1,54 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex: Rayquaza</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Rayquaza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #e6d5bd;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 5vh 5vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(20px, 4vw, 40px);
+    margin-bottom: 5vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon-img {
+    width: clamp(150px, 25vw, 350px);
+}
+
+.info {
+    max-width: 600px;
+    font-size: clamp(10px, 1.2vw, 16px);
+}
+
+.tipo {
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #78c850; /* verde dragón */
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.boton {
+    display: block;
+    margin: 5vh auto;
+    background: red;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: clamp(10px, 1.2vw, 16px);
+    width: fit-content;
+}
+
+/* SECCIÓN SIN EVOLUCIONES */
+.evoluciones {
+    background: repeating-linear-gradient(
+        135deg,
+        #666,
+        #666 10px,
+        #6f6f6f 10px,
+        #6f6f6f 20px
+    );
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.evoluciones h2 {
+    margin-bottom: 20px;
+}
+
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <header class="pokemon-header">
-            <h1 class="pokemon-name">Rayquaza</h1>
-            <div class="pokemon-image-container">
-                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png" alt="Rayquaza" class="pokemon-main-image">
-            </div>
-            <p class="pokemon-number">Nº 384</p>
-        </header>
 
-        <section class="evolutions-section">
-            <h2 class="section-title">Formas</h2>
-            <div class="evolution-chain">
-                <div class="evolution-stage">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png" alt="Rayquaza" class="evolution-image">
-                    <p>Rayquaza</p>
-                </div>
-                
-                <span class="arrow">➤</span>
+<div class="main">
 
-                <div class="evolution-stage current">
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/384.png" alt="Mega Rayquaza" class="evolution-image">
-                    <p>Mega Rayquaza</p>
-                </div>
-            </div>
-        </section>
+    <h1>Rayquaza</h1>
 
-        <section class="pokemon-details">
-            <h2 class="section-title">Detalles</h2>
-            <div class="details-content">
-                <p class="description">
-                    Rayquaza es un Pokémon legendario de tipo Dragón/Volador. 
-                    Habita en la capa de ozono y puso fin a la lucha entre Kyogre y Groudon.
-                </p>
-                <ul class="stats-list">
-                    <li><strong>TIPO:</strong> <span class="tag">DRAGÓN</span> <span class="tag">VOLADOR</span></li>
-                    <li><strong>ALTURA:</strong> 7.0 m</li>
-                    <li><strong>PESO:</strong> 206.5 kg</li>
-                    <li><strong>HABILIDAD:</strong> Bucle Aire</li>
-                </ul>
+    <div class="content">
+        <img src="rayquaza.png" class="pokemon-img">
+
+        <div class="info">
+            <div class="tipo">
+                Tipo: 
+                <span class="badge">Dragón</span>
+                <span class="badge">Volador</span>
             </div>
-        </section>
+
+            <p>
+                <strong>Descripción:</strong><br><br>
+                Rayquaza ha vivido durante cientos de millones de años en la capa de ozono,
+                sin descender jamás a la superficie. Se alimenta de meteoritos y es conocido
+                por poner fin a los enfrentamientos entre Kyogre y Groudon.
+            </p>
+        </div>
     </div>
+
+    <a href="index.html" class="boton">Volver a inicio</a>
+
+</div>
+
+<!-- SIN EVOLUCIONES -->
+<div class="evoluciones">
+    <h2>Este Pokémon no tiene evoluciones</h2>
+</div>
+
 </body>
 </html>
