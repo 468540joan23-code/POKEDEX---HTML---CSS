@@ -6,14 +6,13 @@
     <title>Pokédex: Rayquaza</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header class="pokemon-header">
             <h1 class="pokemon-name">Rayquaza</h1>
             <div class="pokemon-image-container">
-                <img src="rayquaza.png" alt="Rayquaza Icon" class="pokemon-main-image">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png" alt="Rayquaza" class="pokemon-main-image">
             </div>
             <p class="pokemon-number">Nº 384</p>
         </header>
@@ -21,29 +20,34 @@
         <section class="evolutions-section">
             <h2 class="section-title">Formas</h2>
             <div class="evolution-chain">
-                <div class="evolution-stage current-evolution">
-                    <img src="rayquaza.png" alt="Rayquaza" class="evolution-image">
-                    <p class="evolution-name">Rayquaza</p>
+                <div class="evolution-stage">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png" alt="Rayquaza" class="evolution-image">
+                    <p>Rayquaza</p>
                 </div>
                 
-                <img src="flecha_der.png" alt="flecha" class="evolution-arrow">
+                <span class="arrow">➤</span>
 
-                <a href="rayquaza.html" class="evolution-stage">
-                    <img src="mega_rayquaza.png" alt="Mega Rayquaza" class="evolution-image">
-                    <p class="evolution-name">Mega Rayquaza</p>
-                </a>
+                <div class="evolution-stage current">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/384.png" alt="Mega Rayquaza" class="evolution-image">
+                    <p>Mega Rayquaza</p>
+                </div>
             </div>
         </section>
 
         <section class="pokemon-details">
             <h2 class="section-title">Detalles</h2>
-            <p>Rayquaza es un Pokémon legendario de tipo Dragón/Volador. Se dice que ha vivido durante cientos de millones de años en la capa de ozono, por encima de las nubes, y bajó para detener la lucha entre Kyogre y Groudon.</p>
-            <ul>
-                <li><strong>Tipo:</strong> Dragón / Volador</li>
-                <li><strong>Altura:</strong> 7.0 m</li>
-                <li><strong>Peso:</strong> 206.5 kg</li>
-                <li><strong>Habilidad:</strong> Bucle Aire</li>
-            </ul>
+            <div class="details-content">
+                <p class="description">
+                    Rayquaza es un Pokémon legendario de tipo Dragón/Volador. 
+                    Habita en la capa de ozono y puso fin a la lucha entre Kyogre y Groudon.
+                </p>
+                <ul class="stats-list">
+                    <li><strong>TIPO:</strong> <span class="tag">DRAGÓN</span> <span class="tag">VOLADOR</span></li>
+                    <li><strong>ALTURA:</strong> 7.0 m</li>
+                    <li><strong>PESO:</strong> 206.5 kg</li>
+                    <li><strong>HABILIDAD:</strong> Bucle Aire</li>
+                </ul>
+            </div>
         </section>
     </div>
 </body>
