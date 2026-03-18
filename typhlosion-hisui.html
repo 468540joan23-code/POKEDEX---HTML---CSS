@@ -2,21 +2,18 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Cyndaquil</title>
+<title>Typhlosion Hisui</title>
 
-<!-- Fuente retro opcional -->
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 <style>
 
-/* Pokémon seleccionado */
 .evo.active img {
     border: 5px solid yellow;
     box-shadow: 0 0 20px yellow;
     transform: scale(1.1);
 }
 
-/* Opcional: también el texto */
 .evo.active .evo-name {
     color: yellow;
 }
@@ -32,20 +29,17 @@ body {
     background-color: #e6d5bd;
 }
 
-/* CONTENEDOR PRINCIPAL */
 .main {
     min-height: 100vh;
     padding: 5vh 5vw;
 }
 
-/* TITULO */
 h1 {
     text-align: center;
     font-size: clamp(20px, 4vw, 40px);
     margin-bottom: 5vh;
 }
 
-/* CONTENIDO PRINCIPAL */
 .content {
     display: flex;
     align-items: center;
@@ -63,7 +57,6 @@ h1 {
     font-size: clamp(10px, 1.2vw, 16px);
 }
 
-/* TIPO */
 .tipo {
     margin-bottom: 20px;
 }
@@ -74,7 +67,10 @@ h1 {
     border-radius: 6px;
 }
 
-/* BOTON */
+.ghost {
+    background: purple;
+}
+
 .boton {
     display: block;
     margin: 5vh auto;
@@ -87,9 +83,7 @@ h1 {
     width: fit-content;
 }
 
-/* ------------------- */
 /* EVOLUCIONES */
-/* ------------------- */
 
 .evoluciones {
     background: repeating-linear-gradient(
@@ -152,9 +146,6 @@ h1 {
     font-size: 12px;
 }
 
-.ghost {
-    background: purple;
-}
 </style>
 </head>
 
@@ -162,21 +153,23 @@ h1 {
 
 <div class="main">
 
-    <h1>Cyndaquil</h1>
+    <h1>Typhlosion (Hisui)</h1>
 
     <div class="content">
-        <img src="cyndaquil.png" class="pokemon-img">
+        <img src="typhlosion-hisui.png" class="pokemon-img">
 
         <div class="info">
             <div class="tipo">
-                Tipo: <span class="badge">fuego</span>
+                Tipo: 
+                <span class="badge">fuego</span>
+                <span class="badge ghost">fantasma</span>
             </div>
 
             <p>
                 <strong>Descripción:</strong><br><br>
-                Cyndaquil se protege soltando llamas por el lomo. Cuando está enfadado,
-                las llamas son fieras, pero, si está cansado, solo consigue echar algunas
-                chispas que no llegan a cuajar en una completa combustión.
+                Esta forma regional de Typhlosion canaliza energía espiritual.
+                Sus llamas tienen un aspecto etéreo y pueden guiar a las almas.
+                Se dice que purifica espíritus mientras combate con fuego fantasmal.
             </p>
         </div>
     </div>
@@ -193,7 +186,7 @@ h1 {
     <div class="evo-container">
 
         <!-- CYNDAQUIL -->
-        <a href="cyndaquil.html" class="evo active">
+        <a href="cyndaquil.html" class="evo">
             <img src="cyndaquil.png">
             <div class="evo-name">Cyndaquil N.º 0155</div>
             <div class="evo-type">Fuego</div>
@@ -217,8 +210,8 @@ h1 {
             <div class="evo-type">Fuego</div>
         </a>
 
-        <!-- TYPHLOSION HISUI -->
-        <a href="typhlosion-hisui.html" class="evo">
+        <!-- TYPHLOSION HISUI (ACTIVO) -->
+        <a href="typhlosion-hisui.html" class="evo active">
             <img src="typhlosion-hisui.png">
             <div class="evo-name">Typhlosion N.º 0157</div>
             <div>
